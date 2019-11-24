@@ -1,14 +1,9 @@
-//package com.wur3.yearly.repository;
-//
-//import org.springframework.stereotype.Repository;
-//
-//import java.io.File;
-//
-//@Repository
-//public class EventRepository {
-//
-//    private File file;
-//    public EventRepository (File file){
-//        this.file = file;
-//    }
-//}
+package com.wur3.yearly.repository;
+
+import com.wur3.yearly.model.Event;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EventRepository extends CrudRepository<Event, Long> {
+}

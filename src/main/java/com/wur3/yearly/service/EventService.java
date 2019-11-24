@@ -1,10 +1,14 @@
 package com.wur3.yearly.service;
 
-import com.wur3.yearly.model.EventModel;
-//import com.wur3.yearly.repository.EventRepository;
+import com.wur3.yearly.model.Event;
 
-public class EventService {
-    //EventRepository eventRepository;
+import java.util.List;
 
-    void save(EventModel eventModel){};
+public interface EventService {
+
+    abstract List<Event> getAllEvents();
+
+    abstract void createEvent(Event event);
+
+    abstract void deleteEvent(Long id);
 }
