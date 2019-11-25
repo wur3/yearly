@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     private int month;
 
@@ -23,7 +23,7 @@ public class Event {
 
     public Event() {}
 
-    public Event(int id, int month, int day, String desc) {
+    public Event(long id, int month, int day, String desc) {
         this.id=id;
         this.month=month;
         this.day=day;
